@@ -43,7 +43,7 @@ export default function AddExpense() {
         </div>
         <div>
           <Label>Categoria</Label>
-          <Select value={category} onValueChange={setCategory}>
+          <Select value={category} onValueChange={(value) => setCategory(value || '')}>
             <SelectTrigger>
               <SelectValue placeholder="Selecione uma categoria" />
             </SelectTrigger>

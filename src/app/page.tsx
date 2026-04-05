@@ -20,12 +20,12 @@ export default function Home() {
         <CardContent>
           <p>Gastos registrados: {expenses.length}</p>
           <div className="mt-4 space-x-2">
-            <Button asChild>
-              <Link href="/add-expense">Adicionar Gasto</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/categories">Gerenciar Categorias</Link>
-            </Button>
+            <Link href="/add-expense">
+              <Button>Adicionar Gasto</Button>
+            </Link>
+            <Link href="/categories">
+              <Button variant="outline">Gerenciar Categorias</Button>
+            </Link>
           </div>
         </CardContent>
       </Card>
